@@ -1,0 +1,2 @@
+# Task_Management
+Its a system that helps in managing the task being given by anyone , In office we have to usually alot some task to our juniors or colleagues ,so in this system admin(owner) will add users(employees) and will provide a tab which will give notification to all the user thus making work easy user can login and see thier task being alloted and see the task completed and all the task given to others .
