@@ -1,0 +1,76 @@
+<?php
+
+$config=[
+    'add_articles_rules'=>[
+    [ 'field'=>'name',
+       'label'=>'Name',
+       'rules'=>'required|is_unique[adduser.name]'
+    ],
+    [
+        'field'=>'email',
+        'label'=>'Email',
+        'rules'=>'required|valid_email|is_unique[adduser.email]' 
+    ],
+    [
+        'field'=>'password',
+        'label'=>'password',
+        'rules'=>'required' 
+    ],
+    [
+        'field'=>'gender',
+        'label'=>'Gender',
+        'rules'=>'required' 
+    ],
+    [
+        'field'=>'designation',
+        'label'=>'Designation',
+        'rules'=>'required' 
+    ]
+    ],
+    'add_designation_rules'=>[
+        [ 'field'=>'dname',
+           'label'=>'Designation',
+           'rules'=>'required|is_unique[designation.dname]'
+        ]
+    ],
+    'add_login_rules'=>[
+        [
+            'field'=>'username',
+            'label'=>'Username',
+            'rules'=>'required|alpha|trim'
+        ],
+        [
+            'field'=>'password',
+            'label'=>'Password',
+            'rules'=>'required'
+        ]],
+        'signup_rules'=>[
+            [
+                'field'=>'username',
+                'label'=>'Username',
+                'rules'=>'required|alpha|trim'
+            ],
+            [
+                'field'=>'password',
+                'label'=>'Password',
+                'rules'=>'required'
+            ] ,
+            [
+                'field'=>'confirm_password',
+                'label'=>'Confirm_password',
+                'rules'=>'required'
+            ],
+            [
+                'field'=>'email',
+                'label'=>'email',
+                'rules'=>'required'
+            ],
+            [
+                'field'=>'city',
+                'label'=>'city',
+                'rules'=>'required'
+            ]
+        ]
+    ]
+;
+?>
